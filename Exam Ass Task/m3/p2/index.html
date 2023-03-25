@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-3 P-2</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var input = ["a", "b", "a", "e","c", "d","e",]
+
+    // const output = input.reduce((accum, x) => {
+
+    //     accum[x] = accum[x] ? accum[x] + 1 : 1;
+    //     return accum;
+    // }, {});
+
+    // console.log(output);
+
+
+    const out2=input.reduce(function(num1,f){
+        num1[f] = num1[f] ? num1[f] + 1 : 1;
+        return num1;
+    },{});
+    console.log(out2);
+
+</script>
+
+</html>

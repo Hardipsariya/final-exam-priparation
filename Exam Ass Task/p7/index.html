@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P 7</title>
+</head>
+
+<body>
+    <p id="onlyp"></p>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+</body>
+<script>
+    let myobj = { a: 1, b: 7, c:5, d: 4 }
+
+    function mydemo() {
+        var a = Object.keys(myobj);
+        var w = Object.values(myobj);
+        console.log(a);
+
+        for (let i = 0; i < a.length; i++) {
+            
+            if (a[i] == "b") {
+                document.getElementById("onlyp").innerHTML="proparty of b is ignored ";
+                console.log("proparty of b is ignored");
+            }
+            else {
+                console.log("youre all property is :- "+" "+myobj.a+" "+myobj.c+" "+myobj.d);
+                document.getElementById("p1").innerHTML="youre property is :- "+myobj.a;
+                document.getElementById("p2").innerHTML="youre property is :- "+myobj.c;
+                document.getElementById("p3").innerHTML="youre property is :- "+myobj.d;
+            }
+
+        };
+    };
+
+    mydemo();
+
+</script>
+
+</html>
